@@ -9,7 +9,7 @@ import {
   Wrapper,
   ProjectLinkButton,
 } from "../styledComponents";
-import instagram from "../../assets/images/ig.png";
+// import instagram from "../../assets/images/ig.png";
 import github from "../../assets/images/github.png";
 import dribble from "../../assets/images/dribble.png";
 import data from "../../assets/data/portfolioData";
