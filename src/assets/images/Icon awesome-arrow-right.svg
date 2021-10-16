@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.062" height="11.756" viewBox="0 0 12.062 11.756">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d0d0d0;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" class="cls-1" d="M5.128,3.435l.6-.6a.643.643,0,0,1,.913,0l5.233,5.231a.643.643,0,0,1,0,.913L6.638,14.213a.643.643,0,0,1-.913,0l-.6-.6a.647.647,0,0,1,.011-.923L8.383,9.6H.646A.645.645,0,0,1,0,8.956V8.095a.645.645,0,0,1,.646-.646H8.383L5.139,4.358A.642.642,0,0,1,5.128,3.435Z" transform="translate(0 -2.647)"/>
+</svg>

@@ -1,0 +1,58 @@
+.modal-wrapper {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 5% 95%;
+  height: 80%;
+  min-height: 40vh;
+  max-height: 1080px;
+  padding: 0 2rem;
+  width: 90%;
+  max-width: 90%;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.cancel-btn-wrapper {
+  width: 100%;
+  grid-column-start: 0;
+  grid-column-end: 4;
+  flex: end;
+}
+
+.tool-used {
+  height: 20px;
+  margin-right: 0.6rem;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  padding-top: 1rem;
+}
+
+.portfolio-detail-footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.carousel-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+}

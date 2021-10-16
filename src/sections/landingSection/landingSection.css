@@ -1,0 +1,39 @@
+.landing-section {
+  /* scroll-snap-align: start; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 100px;
+  width: 100%;
+  max-width: 1820px;
+  padding: 0 100px;
+  color:rgb(128, 128, 128);
+}
+
+.intro-section {
+  width: 60vw;
+}
+.image-section {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desription {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* phone and tablet screens---------------------------------------- */
+@media only screen and (max-width: 1320px) {
+  .landing-section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .image-section {
+    width: 20vw;
+    margin-bottom: 3rem;
+  }
+}

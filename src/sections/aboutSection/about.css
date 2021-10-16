@@ -1,0 +1,35 @@
+.about-section {
+  display: grid;
+  grid-template-columns: 8% 80% 10%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.description-card {
+  /* min-height: 30vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-descr {
+  width: 40%;
+  min-width: 40%;
+}
+
+.skill-number {
+  font-family: Helvetica Neue;
+  font-size: 11rem;
+  margin: 0;
+  color: #e4e4e4;
+  text-align: center;
+  width: 60%;
+  min-width: 60%;
+}
+
+.number {
+  margin: 0;
+}

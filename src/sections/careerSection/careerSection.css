@@ -1,0 +1,52 @@
+.cta-wrapper{
+    /* color:#fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    /* scroll-snap-align: start; */
+}
+
+.cta{
+    width:100vw;
+    max-width: 100%;
+    min-width: 100%;
+    background-image: url('../../assets/images/cta-bg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    /* background-color: aqua; */
+}
+
+.cta-txt{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.career-obj-section{
+    height: 60vh;
+    margin: 0 10%;
+    padding-top: 3rem;
+
+}
+
+.tools{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tool{
+    width:40px;
+    height: auto;
+}
