@@ -27,7 +27,7 @@ function App() {
       <AppWrapper darkTheme={controller} >
         <Modal/>
         <Navbar />
-        <DownloadResUmeButton type="rounded" darkTheme={controller}>Download Resume</DownloadResUmeButton>
+        <DownloadResUmeButton type="rounded" darkTheme={controller} as="a" href="./assets/images/cv.pdf" rel="noopener noreferrer" target="_blank" >Download Resume</DownloadResUmeButton>
         <LandingSection />
         <About/>
         <Portfolio/>
