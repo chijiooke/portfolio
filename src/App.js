@@ -7,6 +7,7 @@ import LandingSection from "./sections/landingSection/LandingSection";
 import Navbar from "./sections/navbar/Navbar";
 import Portfolio from "./sections/portfolioSection/Portfolio";
 import CareerSection from "./sections/careerSection/CareerSection";
+import asset from './assets/images/cv.pdf'
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
@@ -27,7 +28,7 @@ function App() {
       <AppWrapper darkTheme={controller} >
         <Modal/>
         <Navbar />
-        <DownloadResUmeButton type="rounded" darkTheme={controller} as="a" href="./assets/images/cv.pdf" rel="noopener noreferrer" target="_blank" >Download Resume</DownloadResUmeButton>
+        <DownloadResUmeButton type="rounded" darkTheme={controller} as="a" href={asset} rel="noopener noreferrer" target="_blank" download>Download Resume</DownloadResUmeButton>
         <LandingSection />
         <About/>
         <Portfolio/>
