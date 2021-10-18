@@ -255,6 +255,7 @@ export const PortfolioCard = styled.div`
     color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#fff")};
     background-image: url(${img});
     background-size: cover;
+    margin-bottom: .8rem;
   }
 `;
 

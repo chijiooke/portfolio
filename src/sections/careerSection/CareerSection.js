@@ -28,7 +28,7 @@ function CareerSection() {
     <Wrapper>
       <div className="cta-wrapper">
         <div className="cta">
-          <CtaText darkTheme={theme}>Download My Resume</CtaText>
+          <CtaText darkTheme={theme}>Download My Résumé </CtaText>
           <Button as="a"
           href={cv}
           rel="noopener noreferrer"
