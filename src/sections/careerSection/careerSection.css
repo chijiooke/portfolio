@@ -47,6 +47,10 @@
 }
 
 .tool{
-    width:40px;
+    width:1.8rem;
     height: auto;
+}
+
+.tool:hover{
+    filter:invert(100%)
 }

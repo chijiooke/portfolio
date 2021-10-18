@@ -5,6 +5,7 @@ import darkThemeLogo from "../../assets/images/dark-theme-logo.png";
 import { ThemeContext } from "../../assets/utils/ThemeContext";
 import ToggleThemeButton from "../../components/ToggleThemeButton";
 import BurgerMenu from "./BurgerMenu";
+import Navcontent from "./Navcontent";
 
 function Navbar() {
   const theme = useContext(ThemeContext);
@@ -21,6 +22,7 @@ function Navbar() {
       <div className="controls">
         <BurgerMenu />
         <ToggleThemeButton />
+        <Navcontent/>
       </div>
     </div>
   );

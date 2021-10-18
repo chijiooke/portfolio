@@ -20,6 +20,7 @@ import xd from "../../assets/images/xd.png";
 import react from "../../assets/images/react.png";
 import ai from "../../assets/images/ai.png";
 import css from "../../assets/images/css3.png";
+import cv from "../../assets/images/cv.pdf";
 
 function CareerSection() {
   const theme = useContext(ThemeContext);
@@ -28,7 +29,11 @@ function CareerSection() {
       <div className="cta-wrapper">
         <div className="cta">
           <CtaText darkTheme={theme}>Download My Resume</CtaText>
-          <Button as="a" href="../assets/images/cv.pdf" darkTheme={theme}>
+          <Button as="a"
+          href={cv}
+          rel="noopener noreferrer"
+          target="_blank"
+          download darkTheme={theme}>
             Download
           </Button>
         </div>

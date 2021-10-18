@@ -13,10 +13,10 @@ function About() {
   const theme = useContext(ThemeContext);
   return (
     <Wrapper>
-      <div className="about-section">
+      <div className="about-section" id="about">
         <SideSectionTitle darkTheme={theme}>About.</SideSectionTitle>
         <section>
-          <div className="description-card">
+          <div className="description-card design-card">
             <div className="skill-descr">
               <TagSpan>{"<section>"}</TagSpan>
               <SubSectionHeaders darkTheme={theme} color="#B5F5C5">

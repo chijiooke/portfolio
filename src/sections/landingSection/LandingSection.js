@@ -15,15 +15,15 @@ function LandingSection() {
   const theme = useContext(ThemeContext);
   return (
     <Wrapper>
-      <div className="landing-section">
+      <div className="landing-section" id="home">
         <div className="intro-section">
-          <TagSpan>{"<h1 ClassName=‘main-header’>"}</TagSpan>
+          <TagSpan>{"<h1 ClassName=‘Greeting’>"}</TagSpan>
           <H1 darkTheme={theme}>HELLO,</H1>
           <H1 darkTheme={theme}>I’M CHIJIOKE</H1>
           <TagSpan>{"</h1>"}</TagSpan>
 
           <section className="desription">
-            <TagSpan>{"<p className=“desc-text”>"}</TagSpan>
+            <TagSpan>{"<p className=“Short Description”>"}</TagSpan>
             <P darkTheme={theme}>
               a{" "}
               <UnderlinedAnchor as="a" href="#" color="#B5F5C5" darkTheme={theme}>
@@ -38,7 +38,7 @@ function LandingSection() {
             <TagSpan>{"</p>"}</TagSpan>
           </section>
 
-          <Button as="a" href="#" darkTheme={theme}>Let’s Work</Button>
+          <Button as="a" href="mailto:michaelsylva36@gmail.com" darkTheme={theme}>Let’s Work</Button>
         </div>
         <div className="image-section">
           <div className="me">

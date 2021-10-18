@@ -10,6 +10,7 @@ import instagram from "../../assets/images/ig.png";
 import github from "../../assets/images/github.png";
 import dribble from "../../assets/images/dribble.png";
 import twitter from "../../assets/images/twitter.png";
+import behance from "../../assets/images/be.png";
 import data from "../../assets/data/portfolioData";
 
 function Portfolio() {
@@ -43,54 +44,85 @@ function Portfolio() {
 
   return (
     <Wrapper>
-      <div className="portfolio-section">
+      <div className="portfolio-section" id="portfolio">
         <div className="socials">
-          <a href="http://facebook.com">
+          <a
+            href="https://github.com/chijiooke"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={github}
-              alt="instagram link"
+              alt="github"
               width="25rem"
               style={{
                 filter: theme.themeState ? "invert(0%)" : "invert(100%)",
               }}
             />
           </a>
-          <a href="http://facebook.com">
+          <a
+            href="https://dribbble.com/chijiooke"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={dribble}
-              alt="instagram link"
+              alt="dribble"
               width="25rem"
               style={{
                 filter: theme.themeState ? "invert(0%)" : "invert(100%)",
               }}
             />
           </a>
-          <a href="http://facebook.com">
+          <a
+            href="https://www.behance.net/michaelsylva"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={behance}
+              alt="behance"
+              width="25rem"
+              style={{
+                filter: theme.themeState ? "invert(100%)" : "invert(0%)",
+              }}
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/chijiooke/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={instagram}
-              alt="instagram link"
+              alt="instagram"
               width="25rem"
               style={{
                 filter: theme.themeState ? "invert(0%)" : "invert(100%)",
               }}
             />
           </a>
-          <a href="http://facebook.com">
+          <a
+            href="https://twitter.com/chijiooke_"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={twitter}
-              alt="instagram link"
+              alt="twitter"
               width="25rem"
               style={{ filter: theme.themeState ? "" : "invert(100%)" }}
             />
           </a>
         </div>
         <div className="projects">
+          {/* <TagSpan>{"<section>"}</TagSpan> */}
           <div className="tab-wrapper">
             {tabArray.map((data, i) => {
               return (
                 <h1 key={i}>
                   <button
-                    className={currentTab === data ? "tab active-tab" : "tab"}
+                    className={currentTab === data ? "active-tab" : "tab"}
                     onClick={(e, data) => handleTabChange(e, data)}
                     style={{
                       color: theme.themeState ? "#fff" : "#000",
@@ -115,7 +147,7 @@ function Portfolio() {
                     setID(data.uID);
                   }}
                 >
-                  {details !== i ? (
+                  {details !== i && window.screen.width > 1318 ? (
                     <div className="image">
                       <img
                         src={data.content.logoIcon}
@@ -153,6 +185,7 @@ function Portfolio() {
           </div>
         </div>
         <div className="title">
+          {/* <TagSpan>{"</section>"}</TagSpan> */}
           <SideSectionTitle darkTheme={theme}>Portfolio.</SideSectionTitle>
         </div>
       </div>

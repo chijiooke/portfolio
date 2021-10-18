@@ -12,6 +12,7 @@ import {
 // import instagram from "../../assets/images/ig.png";
 import github from "../../assets/images/github.png";
 import dribble from "../../assets/images/dribble.png";
+import IG from "../../assets/images/ig.png";
 import data from "../../assets/data/portfolioData";
 import { ThemeContext } from "../../assets/utils/ThemeContext";
 
@@ -65,7 +66,7 @@ function Modal() {
               <P darkTheme={isVisible}>{portfolioItem.content.description}</P>
               <div className="portfolio-detail-footer">
                 <div className="tool-wrapper">
-                  <h3 style={{ color: isVisible.themeState ? "#fff" : "#000" }}>
+                  <h3 className="dzn-with" style={{ color: isVisible.themeState ? "#fff" : "#000" }}>
                     {portfolioItem.category === "Design"
                       ? "Designed With:"
                       : "Made With:"}
@@ -83,7 +84,7 @@ function Modal() {
                     href={portfolioItem.content.link}
                     darkTheme={isVisible}
                   >
-                    {portfolioItem.category === "Design" ? (
+                    {portfolioItem.category === "Design" && (
                       <img
                         src={dribble}
                         alt=""
@@ -94,7 +95,8 @@ function Modal() {
                             : "invert(100%)",
                         }}
                       />
-                    ) : (
+                    )}
+                    {portfolioItem.category === "Engineering" && (
                       <img
                         src={github}
                         alt=""
@@ -106,6 +108,18 @@ function Modal() {
                         }}
                       />
                     )}
+                    {portfolioItem.category === "Graffiti" && (
+                        <img
+                          src={IG}
+                          alt=""
+                          height="20px"
+                          style={{
+                            filter: isVisible.themeState
+                              ? "invert(0%)"
+                              : "invert(100%)",
+                          }}
+                        />
+                      )}
                     {"  "}
                     View Project
                   </ProjectLinkButton>
@@ -117,7 +131,7 @@ function Modal() {
             <img
               src={portfolioItem.content.images[currentImg]}
               alt="ok"
-              height="80%"
+              // height="80%"
             />
             {portfolioItem.content.images.length > 1 && (
               <div className="carousel-ctrl">

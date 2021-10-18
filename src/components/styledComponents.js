@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img from "../assets/images/bg3.png"
 
 export const AppWrapper = styled.div`
   background-color: ${(props) =>
@@ -47,6 +48,21 @@ export const Button = styled.button`
     left: -0.75rem;
     top: -0.71rem;
   }
+
+  @media (max-width: 1320px) {
+    font-size: 18px;
+    font-weight: 600;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border: 4px solid #f7c386;
+      padding: 2rem 4.5rem;
+      width: 113%;
+      left: -0.65rem;
+      top: -0.71rem;
+    }
+  }
 `;
 export const DownloadResUmeButton = styled.button`
   background: ${(props) =>
@@ -82,6 +98,23 @@ export const DownloadResUmeButton = styled.button`
     top: -0.6rem;
     border-radius: 35px;
   }
+
+  @media (max-width: 1320px) {
+    padding: 1rem 0.8rem;
+    bottom: 3rem;
+    right: 2rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border: 4px solid #f7c386;
+      padding: 2rem 3rem;
+      width: 110%;
+      left: -0.7rem;
+      top: -0.6rem;
+      border-radius: 35px;
+    }
+  }
 `;
 
 export const ToggleButton = styled.button`
@@ -113,11 +146,16 @@ export const Wrapper = styled.div`
 `;
 
 export const TagSpan = styled.span`
-  color: rgba(128, 128, 128, 0.4);
+  color: rgba(83, 83, 83, 0.4);
   font-family: Helvetica Neue;
   font-weight: 100;
   font-style: italic;
   // font-size:12px;
+
+  @media (max-width: 1320px) {
+    font-size: 0.7rem;
+    display: none;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -126,6 +164,13 @@ export const H1 = styled.h1`
   font-weight: 600;
   font-weight: italic;
   color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
+
+  @media (max-width: 1320px) {
+    font-size: 3rem;
+    // box-shadow: 2px 2px 2px 2px red;
+    // background-image: ;
+    text-align: center;
+  }
 `;
 export const P = styled.p`
   font-size: 14px;
@@ -136,6 +181,11 @@ export const P = styled.p`
   color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
   margin: 0;
   padding-bottom: 0.5rem;
+
+  @media (max-width: 1320px) {
+    font-size: 12px;
+    // text-align:left;
+  }
 `;
 
 export const UnderlinedAnchor = styled.a`
@@ -163,6 +213,12 @@ export const SideSectionTitle = styled.h3`
   font-size: 600;
   font-size: 26px;
   color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
+
+  @media (max-width: 1320px) {
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+  }
 `;
 
 export const Tabs = styled.button``;
@@ -170,10 +226,10 @@ export const Tabs = styled.button``;
 export const PortfolioCard = styled.div`
   width: 350px;
   height: 250px;
-  color: ${(props) => (props.darkTheme.themeState ? "#999" : "#fff")};
   background-color: ${(props) =>
     props.darkTheme.themeState ? "#21211D" : "#21211D"};
-  fill: ${(props) => (props.darkTheme.themeState ? "#9A9A9AB3" : "#fff")};
+  color: ${(props) => (props.darkTheme.themeState ? "#21211d" : "#21211D")};
+  fill: ${(props) => (props.darkTheme.themeState ? "#21211d" : "#21211D")};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,7 +239,20 @@ export const PortfolioCard = styled.div`
 
   &:hover {
     cursor: pointer;
-    transition: 1s all;
+    transition: 1.2s all;
+    color: ${(props) => (props.darkTheme.themeState ? "#999" : "#fff")};
+    fill: ${(props) => (props.darkTheme.themeState ? "#9A9A9AB3" : "#fff")};
+  }
+
+  @media (max-width: 1320px) {
+    width: 80vw;
+    height: auto;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    fill: ${(props) => (props.darkTheme.themeState ? "#9A9A9AB3" : "#fff")};
+    color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#fff")};
+    background-image: url(${img});
+    background-size: cover;
   }
 `;
 
@@ -271,4 +340,57 @@ export const H2 = styled.h2`
   text-align: center;
   color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
   margin-top: 2rem;
+`;
+
+export const NavWrapper = styled.div`
+  background-color: ${(props) =>
+    props.darkTheme.themeState ? "#21211d" : "#b5f5c5"};
+  border-radius: ${(props) => (props.darkTheme.navToggleState ? "1rem" : "0")};
+  padding: ${(props) =>
+    props.darkTheme.navToggleState ? " 2rem 2rem 1rem 2rem" : "0"};
+  margintop: 2rem;
+  position: fixed;
+  top: 4rem;
+  right: 2rem;
+  min-width: 280px;
+  transition: 0.6s all;
+  height: ${(props) => (props.darkTheme.navToggleState ? "350px" : "0")};
+  overflow: hidden;
+`;
+
+export const NavLink = styled.a`
+  text-decoration: none;
+  color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
+  padding: 0.5rem 0;
+
+  &:hover {
+    color: ${(props) => (props.darkTheme.themeState ? "#b5f5c5" : "#000")};
+    transition: 0.6s all;
+    padding-left: 0.2rem;
+  }
+`;
+export const SocialLink = styled.a`
+  text-decoration: none;
+  color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
+  padding: 0.5rem 0;
+
+  &:hover {
+    color: ${(props) => (props.darkTheme.themeState ? "#b5f5c5" : "#000")};
+    transition: 0.6s all;
+    // padding-left:.2rem;
+  }
+`;
+
+export const SubsectionHeaders = styled.p`
+  font-family: poppins;
+  font-size: 24px;
+  font-weight: 500;
+  vertical-align: center;
+  color: ${(props) => (props.darkTheme.themeState ? "#fff" : "#000")};
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem @media (max-width: 1320px) {
+    font-size: 12px;
+    text-align: left;
+  }
 `;

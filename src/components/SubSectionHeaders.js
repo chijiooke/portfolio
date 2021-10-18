@@ -1,19 +1,12 @@
-import React from "react";
+import React ,{useContext}from "react";
+import { ThemeContext } from "../assets/utils/ThemeContext";
+import { SubsectionHeaders } from "./styledComponents";
 
 function SubSectionHeaders(props) {
+  const theme =useContext(ThemeContext)
   return (
     <div>
-      <p
-        style={{
-          fontFamily: "poppins",
-          fontSize: "24px",
-          fontWeight: "500",
-          verticalAlign: "center",
-          color: props.darkTheme.themeState ? "#fff" : "#000",
-          margin:"0",
-          padding:"0",
-          paddingBottom:'1rem'
-        }}
+      <SubsectionHeaders darkTheme={theme}
       >
         <span
           style={{
@@ -26,7 +19,7 @@ function SubSectionHeaders(props) {
           –
         </span>{" "}
         {props.children}
-      </p>
+      </SubsectionHeaders>
     </div>
   );
 }

@@ -33,7 +33,9 @@
     text-align: center;
   }
   .image-section {
-    width: 20vw;
+    width: 60%;
     margin-bottom: 3rem;
+    border-radius: 50%;
+    display: none;
   }
 }
