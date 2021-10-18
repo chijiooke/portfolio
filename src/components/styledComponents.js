@@ -82,6 +82,7 @@ export const DownloadResUmeButton = styled.button`
   position: fixed;
   bottom: 3rem;
   right: 5rem;
+  z-index:50;
 
   &:hover {
     cursor: pointer;
@@ -207,8 +208,9 @@ export const UnderlinedAnchor = styled.a`
 `;
 
 export const SideSectionTitle = styled.h3`
-  writing-mode: sideways-lr;
+  // writing-mode: sideways-lr;
   // text-orientation: sideways-right;
+  transform: rotate(-90deg);
   font-family: Helvetica Neue;
   font-size: 600;
   font-size: 26px;
